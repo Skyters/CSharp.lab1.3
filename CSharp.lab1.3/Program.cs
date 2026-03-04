@@ -2,7 +2,7 @@
 {
     public class Logic
     {
-        public static string Result(string str)
+        public static string Persent(string str)
         {
             int count = 0;
             string result = "";
@@ -30,7 +30,7 @@
             Console.Write("Введите предложение: ");
             string str = Console.ReadLine();
 
-            var res = Logic.Result(str);
+            var res = Logic.Persent(str);
 
             Console.WriteLine(res);
         }
