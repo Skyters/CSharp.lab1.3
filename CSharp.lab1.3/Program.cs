@@ -2,7 +2,7 @@
 {
     public class Logic
     {
-        public static string Transformation(string str)
+        public static string ConvertingStringOfLettersToFraction(string str)
         {
             int count = 0;
             string result = "";
@@ -30,7 +30,7 @@
             Console.Write("Введите предложение: ");
             string str = Console.ReadLine();
 
-            var res = Logic.Transformation(str);
+            var res = Logic.ConvertingStringOfLettersToFraction(str);
 
             Console.WriteLine(res);
         }

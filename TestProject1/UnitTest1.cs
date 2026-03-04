@@ -8,7 +8,7 @@ namespace TestProject1
         [Test]
         public void TestTransformation1()
         {
-            var result = Logic.Transformation("Буква");
+            var result = Logic.ConvertingStringOfLettersToFraction("Буква");
             Assert.That(result.Contains("Букв: 5"));
             Assert.That(result.Contains("Процент букв: 100,00"));
         }
@@ -16,7 +16,7 @@ namespace TestProject1
         [Test]
         public void TestTransformation2()
         {
-            var result = Logic.Transformation("Буква 123");
+            var result = Logic.ConvertingStringOfLettersToFraction("Буква 123");
             Assert.That(result.Contains("Букв: 5"));
             Assert.That(result.Contains("Процент букв: 55,56"));
         }
@@ -24,7 +24,7 @@ namespace TestProject1
         [Test]
         public void TestTransformation3()
         {
-            var result = Logic.Transformation("123");
+            var result = Logic.ConvertingStringOfLettersToFraction("123");
             Assert.That(result.Contains("Букв: 0"));
             Assert.That(result.Contains("Процент букв: 0,00"));
         }
