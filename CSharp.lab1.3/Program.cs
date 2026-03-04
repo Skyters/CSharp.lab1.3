@@ -1,12 +1,9 @@
 ﻿namespace CSharp.lab1._3
 {
-    internal class Program
+    public class Logic
     {
-        static void Main(string[] args)
+        public static string Result(string str)
         {
-            Console.Write("Введите предложение: ");
-            string str = Console.ReadLine();
-
             int count = 0;
             string result = "";
             for (int i = 0; i < str.Length; i++)
@@ -22,7 +19,20 @@
             result += "\nБукв: " + count;
             result += "\nПроцент букв: " + percent.ToString("F2");
 
-            Console.WriteLine(result);
+            return result;
+        }
+    }
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите предложение: ");
+            string str = Console.ReadLine();
+
+            var res = Logic.Result(str);
+
+            Console.WriteLine(res);
         }
     }
 }
